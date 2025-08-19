@@ -1,7 +1,5 @@
 # 🕹️ Hack The Box – Retired Machines Writeups
 
-Welcome to my repository for Hack The Box writeups of **retired machines**.  
-
 > [!WARNING]
 > Writeups for active machines or current season boxes **are not published** here, in accordance with HTB rules.  
 
