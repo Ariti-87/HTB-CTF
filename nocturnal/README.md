@@ -100,8 +100,7 @@ http://localhost:8080/
 ```
 
 Discovered version: ISPConfig 3.2.10p1  
-Found CVE-2023-46818 and exploited:
+Found CVE-2023-46818 and [exploited](https://github.com/ajdumanhug/CVE-2023-46818):
 ```sh
-https://github.com/ajdumanhug/CVE-2023-46818
 tobias@nocturnal:~$ python3 script.py http://localhost:8080 admin slowmotionapocalypse
 ```

