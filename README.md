@@ -8,11 +8,11 @@
 
 These are the machines I have completed(links will be added over time):
 
-- [Titanic](titanic/README.md)
-- [Nocturnal](nocturnal/README.md)
-- [Dog](dog/README.md)
-- [Code](code/README.md)
-- [Cypher](cypher/README.md)
+- [Titanic](./titanic)
+- [Nocturnal](./nocturnal)
+- [Dog](./dog)
+- [Code](./code)
+- [Cypher](./cypher)
 
 ## 🔒 Machines Not Shareable Yet
 
