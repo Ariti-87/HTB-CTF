@@ -70,6 +70,6 @@ john --list=format-details --format=PBKDF2-HMAC-SHA256
 ssh developer@titanic.htb
 ```
 
-## ⚡ Privilege Escalation
+## 🧗 Privilege Escalation
 While enumerating the system, found a vulnerable component exploitable via CVE-2024-41817:  
 [CVE-2024-41817 PoC](https://github.com/Dxsk/CVE-2024-41817-poc)

