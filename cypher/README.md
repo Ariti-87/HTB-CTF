@@ -62,7 +62,7 @@ Login as graphasm using reused password from neo4j:
 ssh graphasm@10.10.11.57
 ```
 
-## 🧗 Privilege Escalation via ISPConfig
+## 🧗 Privilege Escalation via Bbot
 
 Check sudo privileges:
 ```sh
